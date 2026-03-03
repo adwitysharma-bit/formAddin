@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
+  <title>Form Admin</title>
+
+  <link rel="stylesheet" href="https://app.geotab.com/geotabapps/add-in-css-style-guide/intgr-styles.css">
+
+  <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+  <div id="formAdmin" class="formAdmin-page">
+    <div class="formAdmin-card">
+      <header class="formAdmin-header">
+        <div class="formAdmin-titleRow">
+          <h1 class="formAdmin-title">
+            Form Admin
+            <span class="formAdmin-version">v0.1</span>
+          </h1>
+          <div class="formAdmin-userLine">
+            User: <span id="formAdmin-user" class="formAdmin-user">...</span>
+          </div>
+        </div>
+      </header>
+
+      <div id="loading-state" class="formAdmin-loading hidden" aria-live="polite">Loading…</div>
+
+      <main id="main-content" class="formAdmin-main">
+        <section class="formAdmin-section">
+          <h3 class="formAdmin-h3">Create New Form Template</h3>
+
+          <div class="formAdmin-panel">
+            <div class="formAdmin-field">
+              <label class="formAdmin-label" for="new-form-name">Form Name</label>
+              <input class="formAdmin-input" type="text" id="new-form-name" placeholder="e.g. Vehicle Inspection" />
+            </div>
+
+            <div id="fields-container" class="formAdmin-fields"></div>
+
+            <button id="add-field-btn" type="button" class="formAdmin-btn formAdmin-btnSecondary">
+              + Add Field
+            </button>
+          </div>
+
+          <button id="save-form-btn" type="button" class="formAdmin-btn formAdmin-btnPrimary formAdmin-btnFull">
+            Save Form Template
+          </button>
+          <button id="cancel-edit-btn" type="button" class="formAdmin-btn formAdmin-btnGhost formAdmin-btnFull hidden">
+            Cancel Edit and start new form
+          </button>
+          <button id="delete-form-btn" type="button" class="formAdmin-btn formAdmin-btnDanger formAdmin-btnFull hidden">
+            Delete Form
+          </button>
+        </section>
+
+        <hr class="formAdmin-divider" />
+
+        <section class="formAdmin-section">
+          <h3 class="formAdmin-h3">Saved Templates</h3>
+          <div id="templates-container" class="formAdmin-templatesEmpty">No templates saved yet.</div>
+        </section>
+
+        <hr class="formAdmin-divider" />
+
+        <section class="formAdmin-section">
+          <h3 class="formAdmin-h3">Filled Out Forms</h3>
+
+          <div class="formAdmin-submissionsToolbar">
+            <label class="formAdmin-label" for="submissions-filter">Filter by Form</label>
+            <select id="submissions-filter" class="formAdmin-select">
+              <option value="__all__">All</option>
+            </select>
+          </div>
+          <button id="export-csv-btn" type="button" class="formAdmin-btn formAdmin-btnSecondary">
+            Export CSV (Filter Required)
+          </button>
+
+          <div id="submissions-container" class="formAdmin-submissionsEmpty">No submissions found yet.</div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+{
+    "name": "Tooltip",
+    "supportEmail": "support@assuredtelematics.com",
+    "version": "1.0",
+    "items": [
+        {
+            "page": "map",
+            "noView": false,
+            "mapScript": {
+                "src": "addin.js",
+                "style": "addin.css"
+            }
+        }
+    ],
+    "isSigned": false
+}

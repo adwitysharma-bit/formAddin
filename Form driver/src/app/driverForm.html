@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>driver -form</title>
+</head>
+
+<body>
+
+  <div id="driverForm-app" class="hidden">
+    <div class="driverForm-page">
+      <h2 class="driverForm-title">Smart Driver Log</h2>
+
+      <div class="driverForm-contextCard">
+        <div class="driverForm-contextRow"><span class="driverForm-contextLabel">Driver</span><span
+            id="driverForm-driver" class="driverForm-contextValue"></span></div>
+        <div class="driverForm-contextRow"><span class="driverForm-contextLabel">Vehicle</span><span
+            id="driverForm-vehicle" class="driverForm-contextValue"></span></div>
+        <div class="driverForm-contextRow"><span class="driverForm-contextLabel">VIN</span><span id="driverForm-vin"
+            class="driverForm-contextValue"></span></div>
+      </div>
+
+      <div id="loading" class="driverForm-loading">Loading session data…</div>
+
+      <div id="form-selector-container" class="driverForm-selector hidden">
+        <label class="driverForm-label" for="form-selector">Select Form</label>
+        <select id="form-selector" class="driverForm-select"></select>
+      </div>
+
+      <div id="dynamic-form" class="driverForm-card hidden"></div>
+
+
+    </div>
+  </div>
+
+</body>
+
+</html>

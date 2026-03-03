@@ -1,0 +1,24 @@
+{
+  "name": "driver -form",
+  "supportEmail": "support@assuredtelematics.com",
+  "version": "0.0.1",
+  "items": [{
+    
+    
+    "url": "driverForm.html",
+    "category": "DriveAppLink/",
+    "menuName": {
+      "en": "driver - form"
+    },
+    
+    "icon": "images/icon.svg"
+  }],
+  
+  
+  "dev": {
+    "root": "driverForm",
+    "dist": {
+      "host": "https://www.example.com/myaddin/"
+    }
+  }
+}

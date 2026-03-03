@@ -1,0 +1,24 @@
+{
+  "name": "Form admin",
+  "supportEmail": "",
+  "version": "0.0.1",
+  "items": [{
+    
+    
+    "url": "formAdmin.html",
+    "category": "AddIns",
+    "menuName": {
+      "en": "Form admin"
+    },
+    
+    "icon": "images/icon.svg"
+  }],
+  
+  
+  "dev": {
+    "root": "formAdmin",
+    "dist": {
+      "host": "https://www.example.com/myaddin/"
+    }
+  }
+}
